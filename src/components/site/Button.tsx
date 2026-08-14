@@ -40,7 +40,7 @@ export function ButtonLink({
   withArrow?: boolean;
 } & Omit<ComponentProps<typeof Link>, "to" | "children" | "className">) {
   return (
-    <Link to={to} className={cn(base, variants[variant], className)} {...rest}>
+    <Link to={to as never} className={cn(base, variants[variant], className)} {...rest}>
       {children}
       {withArrow ? <Arrow /> : null}
     </Link>
