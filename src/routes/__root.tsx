@@ -111,7 +111,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description:
             "Digital product studio designing and building websites, digital products and digital systems for growing businesses.",
           areaServed: "NG",
-challenge: undefined,
         }),
       },
     ],
