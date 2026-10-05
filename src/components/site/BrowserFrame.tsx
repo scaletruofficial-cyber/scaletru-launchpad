@@ -7,6 +7,7 @@ export function BrowserFrame({
   className,
   imgClassName,
   priority = false,
+  chrome = true,
 }: {
   src: string;
   alt: string;
@@ -14,6 +15,7 @@ export function BrowserFrame({
   className?: string;
   imgClassName?: string;
   priority?: boolean;
+  chrome?: boolean;
 }) {
   return (
     <figure
@@ -22,16 +24,18 @@ export function BrowserFrame({
         className,
       )}
     >
-      <div className="flex items-center gap-2 border-b border-border bg-surface-2/60 px-4 py-2.5">
-        <span aria-hidden="true" className="h-2 w-2 rounded-full bg-border-strong" />
-        <span aria-hidden="true" className="h-2 w-2 rounded-full bg-border-strong" />
-        <span aria-hidden="true" className="h-2 w-2 rounded-full bg-border-strong" />
-        {label ? (
-          <span className="ml-3 truncate text-[0.7rem] font-medium tracking-wide text-muted-foreground">
-            {label}
-          </span>
-        ) : null}
-      </div>
+      {chrome ? (
+        <div className="flex items-center gap-2 border-b border-border bg-surface-2/60 px-4 py-2.5">
+          <span aria-hidden="true" className="h-2 w-2 rounded-full bg-border-strong" />
+          <span aria-hidden="true" className="h-2 w-2 rounded-full bg-border-strong" />
+          <span aria-hidden="true" className="h-2 w-2 rounded-full bg-border-strong" />
+          {label ? (
+            <span className="ml-3 truncate text-[0.7rem] font-medium tracking-wide text-muted-foreground">
+              {label}
+            </span>
+          ) : null}
+        </div>
+      ) : null}
       <img
         src={src}
         alt={alt}

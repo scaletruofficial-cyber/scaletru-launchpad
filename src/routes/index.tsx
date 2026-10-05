@@ -118,9 +118,10 @@ function Home() {
                 />
                 <BrowserFrame
                   src={emberly.image}
-                  alt="Emberly habit tracker app screens built by Scaletru"
+                  alt="Emberly habit tracking app landing page on a laptop, built by Scaletru"
                   label="emberly"
                   imgClassName="aspect-[16/11]"
+                  chrome={false}
                 />
               </div>
             </div>
