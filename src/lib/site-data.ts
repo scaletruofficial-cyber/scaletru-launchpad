@@ -2,8 +2,10 @@ import tradesphereImg from "@/assets/tradesphere.jpg";
 import directletImg from "@/assets/directlet.jpg";
 import crmImg from "@/assets/crm.jpg";
 import arenaxImg from "@/assets/arenax.jpg";
-import emberlyImg from "@/assets/emberly.jpg";
 import printblinkImg from "@/assets/printblink.jpg";
+import emberlyLaptop from "@/assets/emberly-laptop-mockup.png.asset.json";
+import emberlyDashboard from "@/assets/emberly-portfolio-shot.png.asset.json";
+import emberlyChecklist from "@/assets/emberly-portfolio-mock.png.asset.json";
 
 export type ProjectKind = "client" | "showcase";
 
@@ -15,6 +17,7 @@ export type Project = {
   short: string;
   image: string;
   imageAlt: string;
+  gallery?: { src: string; alt: string }[];
   overview: string;
   challenge: string;
   approach: string;
@@ -195,8 +198,19 @@ export const projects: Project[] = [
     kind: "showcase",
     short:
       "A clean, focused habit tracker built to make daily consistency easier — simple enough to open every day without friction.",
-    image: emberlyImg,
-    imageAlt: "Emberly habit tracking app screens showing streak rings and a weekly checklist",
+    image: emberlyLaptop.url,
+    imageAlt:
+      "Emberly habit tracking app landing page shown on a laptop screen in a warm, plant-filled workspace",
+    gallery: [
+      {
+        src: emberlyDashboard.url,
+        alt: "Emberly daily ritual dashboard showing today's habit, a reflection prompt and bottom navigation",
+      },
+      {
+        src: emberlyChecklist.url,
+        alt: "Emberly daily ritual checklist with a 50 percent progress ring and four colour-coded habits",
+      },
+    ],
     overview:
       "Emberly is a deliberately small product. It exists to prove a point we care about: restraint is a design skill, and the best daily-use tools do less, faster.",
     challenge:

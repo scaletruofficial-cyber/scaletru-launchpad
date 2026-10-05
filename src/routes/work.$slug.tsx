@@ -156,6 +156,31 @@ function ProjectDetail() {
         </div>
       </section>
 
+      {project.gallery?.length ? (
+        <section className="border-t border-border section-y">
+          <div className="container-page">
+            <Reveal>
+              <h2 className="text-3xl font-extrabold md:text-4xl">Product shots</h2>
+            </Reveal>
+            <div className="mt-10 grid items-start gap-5 md:grid-cols-2">
+              {project.gallery.map((shot, i) => (
+                <Reveal key={shot.src} delay={i * 80}>
+                  <figure className="overflow-hidden rounded-2xl border border-border bg-surface">
+                    <img
+                      src={shot.src}
+                      alt={shot.alt}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-auto w-full"
+                    />
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section className="border-t border-border section-y">
         <div className="container-page">
           <Reveal className="rounded-2xl border border-border bg-surface p-8 md:p-12">
