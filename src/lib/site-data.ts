@@ -1,8 +1,10 @@
 import tradesphereImg from "@/assets/tradesphere.jpg";
-import directletImg from "@/assets/directlet.jpg";
 import crmImg from "@/assets/crm.jpg";
 import arenaxImg from "@/assets/arenax.jpg";
 import printblinkImg from "@/assets/printblink.jpg";
+import directletLaptop from "@/assets/directlet-laptop-mockup.png.asset.json";
+import directletLanding from "@/assets/directlet-landing-shot.png.asset.json";
+import directletListings from "@/assets/directlet-listings-shot.png.asset.json";
 import emberlyLaptop from "@/assets/emberly-laptop-mockup.png.asset.json";
 import emberlyDashboard from "@/assets/emberly-portfolio-shot.png.asset.json";
 import emberlyChecklist from "@/assets/emberly-portfolio-mock.png.asset.json";
@@ -96,8 +98,19 @@ export const projects: Project[] = [
     kind: "showcase",
     short:
       "DirectLet connects landlords and tenants directly with listings, search and filters, inspection booking, in-app messaging, and payments, built for the Nigerian rental market.",
-    image: directletImg,
-    imageAlt: "DirectLet rental marketplace interface showing property listings and messaging",
+    image: directletLaptop.url,
+    imageAlt:
+      "DirectLet rental marketplace landing page shown on a laptop screen in a warm, plant-filled workspace",
+    gallery: [
+      {
+        src: directletLanding.url,
+        alt: "DirectLet landing page in a browser window with the Rent direct headline and property photos",
+      },
+      {
+        src: directletListings.url,
+        alt: "DirectLet listings page in a browser window showing search filters and property cards for Lagos and Abuja",
+      },
+    ],
     overview:
       "DirectLet is a rental platform built around a specific market reality: finding a place to rent in Nigeria usually means going through layers of intermediaries with little transparency.",
     challenge:
