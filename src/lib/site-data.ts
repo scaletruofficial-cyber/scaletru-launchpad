@@ -5,6 +5,8 @@ import printblinkImg from "@/assets/printblink.jpg";
 import directletLaptop from "@/assets/directlet-laptop-photo.png.asset.json";
 import directletLanding from "@/assets/directlet-landing-shot.png.asset.json";
 import directletListings from "@/assets/directlet-listings-shot.png.asset.json";
+import directletLandlord from "@/assets/directlet-landlord-dashboard.png.asset.json";
+import directletTenant from "@/assets/directlet-tenant-dashboard.png.asset.json";
 import emberlyLaptop from "@/assets/emberly-laptop-mockup.png.asset.json";
 import emberlyDashboard from "@/assets/emberly-portfolio-shot.png.asset.json";
 import emberlyChecklist from "@/assets/emberly-portfolio-mock.png.asset.json";
@@ -109,6 +111,14 @@ export const projects: Project[] = [
       {
         src: directletListings.url,
         alt: "DirectLet listings page in a browser window showing search filters and property cards for Lagos and Abuja",
+      },
+      {
+        src: directletLandlord.url,
+        alt: "DirectLet landlord dashboard showing my listings with active and verified rental properties",
+      },
+      {
+        src: directletTenant.url,
+        alt: "DirectLet tenant dashboard showing my bookings with confirmed, completed and requested inspections",
       },
     ],
     overview:
