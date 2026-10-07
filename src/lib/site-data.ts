@@ -2,7 +2,7 @@ import tradesphereImg from "@/assets/tradesphere.jpg";
 import crmImg from "@/assets/crm.jpg";
 import arenaxImg from "@/assets/arenax.jpg";
 import printblinkImg from "@/assets/printblink.jpg";
-import directletLaptop from "@/assets/directlet-laptop-mockup.png.asset.json";
+import directletLaptop from "@/assets/directlet-laptop-photo.png.asset.json";
 import directletLanding from "@/assets/directlet-landing-shot.png.asset.json";
 import directletListings from "@/assets/directlet-listings-shot.png.asset.json";
 import emberlyLaptop from "@/assets/emberly-laptop-mockup.png.asset.json";
@@ -100,7 +100,7 @@ export const projects: Project[] = [
       "DirectLet connects landlords and tenants directly with listings, search and filters, inspection booking, in-app messaging, and payments, built for the Nigerian rental market.",
     image: directletLaptop.url,
     imageAlt:
-      "DirectLet rental marketplace landing page shown on a laptop screen in a warm, plant-filled workspace",
+      "DirectLet rental marketplace landing page shown on a laptop screen on a bright desk against a soft green wall",
     gallery: [
       {
         src: directletLanding.url,
