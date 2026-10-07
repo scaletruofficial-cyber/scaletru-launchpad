@@ -112,6 +112,14 @@ export const projects: Project[] = [
         src: directletListings.url,
         alt: "DirectLet listings page in a browser window showing search filters and property cards for Lagos and Abuja",
       },
+      {
+        src: directletLandlord.url,
+        alt: "DirectLet landlord dashboard showing my listings with active and verified rental properties",
+      },
+      {
+        src: directletTenant.url,
+        alt: "DirectLet tenant dashboard showing my bookings with confirmed, completed and requested inspections",
+      },
     ],
     overview:
       "DirectLet is a rental platform built around a specific market reality: finding a place to rent in Nigeria usually means going through layers of intermediaries with little transparency.",
