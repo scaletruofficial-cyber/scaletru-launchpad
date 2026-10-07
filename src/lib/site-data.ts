@@ -100,7 +100,7 @@ export const projects: Project[] = [
       "DirectLet connects landlords and tenants directly with listings, search and filters, inspection booking, in-app messaging, and payments, built for the Nigerian rental market.",
     image: directletLaptop.url,
     imageAlt:
-      "DirectLet rental marketplace landing page shown on a laptop screen in a warm, plant-filled workspace",
+      "DirectLet rental marketplace landing page shown on a laptop screen on a bright desk against a soft green wall",
     gallery: [
       {
         src: directletLanding.url,
