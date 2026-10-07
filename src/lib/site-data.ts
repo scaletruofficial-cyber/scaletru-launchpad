@@ -2,7 +2,7 @@ import tradesphereImg from "@/assets/tradesphere.jpg";
 import crmImg from "@/assets/crm.jpg";
 import arenaxImg from "@/assets/arenax.jpg";
 import printblinkImg from "@/assets/printblink.jpg";
-import directletLaptop from "@/assets/directlet-laptop-mockup.png.asset.json";
+import directletLaptop from "@/assets/directlet-laptop-photo.png.asset.json";
 import directletLanding from "@/assets/directlet-landing-shot.png.asset.json";
 import directletListings from "@/assets/directlet-listings-shot.png.asset.json";
 import emberlyLaptop from "@/assets/emberly-laptop-mockup.png.asset.json";
