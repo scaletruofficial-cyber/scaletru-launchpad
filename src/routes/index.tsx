@@ -63,7 +63,7 @@ const outcomes = [
 
 function Home() {
   const tradesphere = getProject("tradesphere")!;
-  const crm = getProject("crm-system")!;
+  const tracleads = getProject("tracleads")!;
   const emberly = getProject("emberly")!;
 
   return (
@@ -104,9 +104,9 @@ function Home() {
           <Reveal delay={200} className="relative">
             <div className="relative">
               <BrowserFrame
-                src={crm.image}
-                alt="CRM dashboard built by Scaletru showing pipeline and analytics"
-                label="scaletru — crm system"
+                src={tracleads.image}
+                alt="Tracleads landing page on a laptop with dashboard, sign-in and leads windows, built by Scaletru"
+                label="scaletru — tracleads"
                 priority
               />
               <div className="mt-4 grid grid-cols-2 gap-4">

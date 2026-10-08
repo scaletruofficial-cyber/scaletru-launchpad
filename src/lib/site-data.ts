@@ -1,5 +1,5 @@
 import tradesphereImg from "@/assets/tradesphere.jpg";
-import crmImg from "@/assets/crm.jpg";
+import tracleadsSlide from "@/assets/tracleads-portfolio-mockup.png.asset.json";
 import arenaxImg from "@/assets/arenax.jpg";
 import printblinkImg from "@/assets/printblink.jpg";
 import directletLaptop from "@/assets/directlet-laptop-photo.png.asset.json";
@@ -147,38 +147,40 @@ export const projects: Project[] = [
       "DirectLet shows how we approach marketplace products built for a local market — designing around real behaviour rather than importing a foreign template.",
   },
   {
-    slug: "crm-system",
-    name: "CRM System",
-    category: "Business operations platform",
+    slug: "tracleads",
+    name: "Tracleads",
+    category: "CRM / sales workspace",
     kind: "showcase",
     short:
-      "Built to a full commercial feature spec — leads, sales pipeline, follow-ups, reporting, and notifications. Designed as a real tool for businesses to manage customer relationships.",
-    image: crmImg,
-    imageAlt: "CRM dashboard interface showing sales pipeline, analytics and lead records",
+      "A CRM and sales workspace built to replace the spreadsheets, chat threads and half-remembered follow-ups most businesses run their pipeline on.",
+    image: tracleadsSlide.url,
+    imageAlt:
+      "Tracleads portfolio slide showing its landing page on a laptop screen, with dashboard, sign-in, workspace setup and leads windows arranged around it",
     overview:
-      "A customer relationship platform built to a complete commercial specification rather than a demo scope — the kind of internal system a growing business actually runs on.",
+      "Tracleads is a product we built and use ourselves — a CRM taken through the full commercial feature specification rather than a demo scope, from workspace setup through to reporting.",
     challenge:
       "Most growing businesses track customers across spreadsheets, chat threads and memory. Nothing is connected, follow-ups get missed, and no one can see the real state of the pipeline.",
     approach:
-      "We built around the daily workflow: capture the lead, move it through defined stages, never lose a follow-up, and give the owner a view of what is actually happening.",
+      "We built around the daily workflow: set up a workspace, capture the lead, move it through defined stages, never lose a follow-up, and give the owner a view of what is actually happening.",
     built: [
-      "Lead capture and customer records",
-      "Sales pipeline with stage management",
-      "Follow-up tracking",
-      "Reporting and analytics views",
-      "Notifications",
+      "Workspace setup and team accounts",
+      "Lead capture with search, filter and sort",
+      "Deal pipeline with stages — new, qualified, proposal, won",
+      "Contacts, companies, tasks and calendar",
+      "Reporting and activity views",
+      "Google sign-in",
     ],
     features: [
+      "Lead and contact records",
       "Pipeline and deal stages",
-      "Customer and contact records",
-      "Follow-up reminders",
+      "Task and follow-up tracking",
       "Reporting dashboards",
-      "In-app notifications",
+      "Workspace and team management",
     ],
-    tech: ["Full-stack web application", "Role-based access", "Analytics views"],
+    tech: ["Full-stack web application", "Google sign-in", "Reporting and analytics views"],
     outcomeLabel: "What it demonstrates",
     outcome:
-      "This project shows our ability to interpret a full commercial feature specification and turn it into a coherent, usable operations tool.",
+      "Tracleads shows our ability to interpret a full commercial feature specification and turn it into a coherent, usable operations tool — one we run ourselves rather than a mockup of one.",
   },
   {
     slug: "arenax",
@@ -340,7 +342,7 @@ export const services: Service[] = [
       "Visibility into what is happening day to day",
       "Team training and handover",
     ],
-    examples: ["crm-system", "arenax"],
+    examples: ["tracleads", "arenax"],
   },
   {
     number: "04",
@@ -362,7 +364,7 @@ export const services: Service[] = [
       "A reusable, documented design system",
       "Design ready to be built",
     ],
-    examples: ["emberly", "directlet", "crm-system"],
+    examples: ["emberly", "directlet", "tracleads"],
   },
 ];
 
