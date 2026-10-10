@@ -184,35 +184,36 @@ export const projects: Project[] = [
     category: "CRM / sales workspace",
     kind: "showcase",
     short:
-      "A CRM and sales workspace built to replace the spreadsheets, chat threads and half-remembered follow-ups most businesses run their pipeline on.",
+      "A full-spec CRM and sales operations workspace built by Scaletru for daily internal use. Tracleads brings lead capture, deal progression and customer context into one multi-tenant product.",
     image: tracleadsSlide.url,
     imageAlt:
       "Tracleads portfolio slide showing its landing page on a laptop screen, with dashboard, sign-in, workspace setup and leads windows arranged around it",
     overview:
-      "Tracleads is a product we built and use ourselves — a CRM taken through the full commercial feature specification rather than a demo scope, from workspace setup through to reporting.",
+      "Tracleads is Scaletru's internal CRM and sales operations workspace, designed to manage client deals from first enquiry through to close. The product serves as both an operational system for the team and a showcase of full commercial SaaS execution.",
     challenge:
-      "Most growing businesses track customers across spreadsheets, chat threads and memory. Nothing is connected, follow-ups get missed, and no one can see the real state of the pipeline.",
+      "Growing businesses often manage sales across disconnected spreadsheets, fragmented chat histories and manual reminders. That creates weak ownership, incomplete customer context and follow-ups that are easy to miss as deal volume grows.",
     approach:
-      "We built around the daily workflow: set up a workspace, capture the lead, move it through defined stages, never lose a follow-up, and give the owner a view of what is actually happening.",
+      "Scaletru designed the product around a clear multi-tenant workspace model, with secure account access and structured onboarding for each business. The sales workflow was reduced to the core operational path: capture and qualify leads, move deals through defined stages, maintain contact and company records, schedule follow-ups and review performance from one system.",
     built: [
-      "Workspace setup and team accounts",
-      "Lead capture with search, filter and sort",
-      "Deal pipeline with stages — new, qualified, proposal, won",
-      "Contacts, companies, tasks and calendar",
-      "Reporting and activity views",
-      "Google sign-in",
+      "Multi-tenant workspace onboarding with business profile setup",
+      "Secure account access with Google sign-in and session-aware workspace protection",
+      "Lead, contact and company management across a shared CRM workspace",
+      "Deal pipeline, task scheduling and reporting views for daily sales operations",
     ],
     features: [
-      "Lead and contact records",
-      "Pipeline and deal stages",
-      "Task and follow-up tracking",
-      "Reporting dashboards",
-      "Workspace and team management",
+      "Lead capture with search, filtering and sorting",
+      "Visual deal pipeline from New to Qualified, Proposal and Won",
+      "Connected contacts and companies directory",
+      "Tasks, follow-up scheduling and reporting dashboards",
     ],
-    tech: ["Full-stack web application", "Google sign-in", "Reporting and analytics views"],
+    tech: [
+      "React 19 and TanStack Start",
+      "TypeScript and Tailwind CSS",
+      "Lovable Cloud authentication and relational data",
+    ],
     outcomeLabel: "What it demonstrates",
     outcome:
-      "Tracleads shows our ability to interpret a full commercial feature specification and turn it into a coherent, usable operations tool — one we run ourselves rather than a mockup of one.",
+      "Tracleads demonstrates Scaletru's ability to take a commercial SaaS product from system design through secure onboarding and operational workflows. It proves that the studio can deliver scalable, multi-tenant software built for repeated daily use rather than a static product demonstration.",
   },
   {
     slug: "arenax",
@@ -254,7 +255,7 @@ export const projects: Project[] = [
     category: "Habit tracking app",
     kind: "showcase",
     short:
-      "A clean, focused habit tracker built to make daily consistency easier — simple enough to open every day without friction.",
+      "A distraction-free habit tracker built around daily momentum, calm typography, and zero-latency local-first logging.",
     image: emberlyLaptop.url,
     imageAlt:
       "Emberly habit tracking app landing page shown on a laptop screen in a warm, plant-filled workspace",
@@ -269,22 +270,35 @@ export const projects: Project[] = [
       },
     ],
     overview:
-      "Emberly is a deliberately small product. It exists to prove a point we care about: restraint is a design skill, and the best daily-use tools do less, faster.",
+      "Emberly is an opinionated, mobile-first habit tracking application engineered to strip away the social noise and commercial friction prevalent in modern self-improvement tools. Designed around daily momentum, the product provides a quiet, intentional space for users to log recurring rituals, maintain streaks, and record daily reflections.",
     challenge:
-      "Most habit apps collapse under their own features. The more they ask of you, the less likely you are to open them on the day it matters.",
+      "Most consumer habit apps suffer from compounding product bloat—complex onboarding taxonomies, gamified vanity metrics, and intrusive push notifications that trigger user fatigue and abandonment. Instead of building personal discipline, users end up managing the tool itself rather than their habits.",
     approach:
-      "We cut everything that was not required to log a habit and see progress, then spent the effort on clarity, speed and the feeling of a streak building.",
+      "We approached Emberly with deliberate product restraint, paring interaction cost down to single-tap confirmations and instant tactile feedback. The architecture pairs a local-first client cache with real-time cloud synchronization, ensuring instantaneous offline UI updates backed by row-level security and relational persistence.",
     built: [
-      "Daily habit logging",
-      "Streak and progress visualisation",
-      "Weekly and calendar views",
-      "A fast, low-friction mobile interface",
+      "Mobile-first responsive web client with custom typography and semantic design tokens",
+      "Local-first state orchestration with resilient background synchronization",
+      "Relational data model with Row Level Security (RLS) for multi-tenant isolation",
+      "Anonymous, private-by-default community question exchange and reflection pipeline",
     ],
-    features: ["Habit creation", "One-tap daily logging", "Streak tracking", "Progress overview"],
-    tech: ["Mobile-first application"],
+    features: [
+      "One-tap ritual checklist with haptic-inspired micro-interactions and completion audio",
+      "Dynamic SVG progress ring visualizing real-time daily momentum and completion velocity",
+      "Daily Spark journaling engine with automated 84-day visit-and-reflection heatmaps",
+      "Real-time cross-device sync and avatar profile management via backend subscriptions",
+    ],
+    tech: [
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack Router",
+      "PostgreSQL",
+      "Supabase Realtime & RLS",
+      "Vite",
+    ],
     outcomeLabel: "What it demonstrates",
     outcome:
-      "Emberly shows our product judgement in miniature — knowing what to leave out is often what makes a product usable.",
+      "Emberly proves that exceptional product judgment often lies in what gets excluded rather than added. The project demonstrates disciplined interface craftsmanship, low-latency client architecture, and the ability to turn a saturated consumer category into a refined, high-utility digital artifact.",
   },
 ];
 
