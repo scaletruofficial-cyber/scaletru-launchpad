@@ -3,3 +3,7 @@
 - [x] Design and install a custom Scaletru browser-tab icon.
 - [x] Replace PrintBlink’s cover and add the three supporting uploaded images.
 - [x] Verify icon delivery and updated project image rendering.
+- [x] Fill PrintBlink and DirectLet case studies with the supplied copy.
+- [x] Fill Emberly and Tracleads case studies with the supplied copy.
+- [ ] TradeSphere case study copy and product images — waiting on the user.
+- [ ] ArenaX case study copy and product images — waiting on the user.
