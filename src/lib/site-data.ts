@@ -1,7 +1,10 @@
 import tradesphereImg from "@/assets/tradesphere.jpg";
 import tracleadsSlide from "@/assets/tracleads-portfolio-mockup.png.asset.json";
 import arenaxImg from "@/assets/arenax.jpg";
-import printblinkImg from "@/assets/printblink.jpg";
+import printblinkLaptop from "@/assets/printblink-laptop-home.png.asset.json";
+import printblinkProducts from "@/assets/printblink-products.png.asset.json";
+import printblinkAbout from "@/assets/printblink-mobile-about.png.asset.json";
+import printblinkContact from "@/assets/printblink-mobile-contact.png.asset.json";
 import directletLaptop from "@/assets/directlet-laptop-photo.png.asset.json";
 import directletLanding from "@/assets/directlet-landing-shot.png.asset.json";
 import directletListings from "@/assets/directlet-listings-shot.png.asset.json";
@@ -40,8 +43,22 @@ export const projects: Project[] = [
     kind: "client",
     short:
       "A client engagement focused on building a professional digital presence that represents the business properly online.",
-    image: printblinkImg,
-    imageAlt: "PrintBlink website interface mockup shown in a browser frame",
+    image: printblinkLaptop.url,
+    imageAlt: "PrintBlink project laptop mockup showing the supplied Hyperdist printer distribution homepage",
+    gallery: [
+      {
+        src: printblinkProducts.url,
+        alt: "PrintBlink project product catalogue mockup showing printer browsing and search",
+      },
+      {
+        src: printblinkAbout.url,
+        alt: "PrintBlink project mobile about page mockup with the Printers, chosen properly headline",
+      },
+      {
+        src: printblinkContact.url,
+        alt: "PrintBlink project mobile contact page mockup showing a WhatsApp enquiry option",
+      },
+    ],
     overview:
       "PrintBlink is genuine client work: a digital presence project delivered by Scaletru. Detailed project documentation is being finalised, so parts of this case study are marked as placeholders rather than filled with assumptions.",
     challenge: "[Placeholder — the specific business problem will be documented here once confirmed with the client.]",
