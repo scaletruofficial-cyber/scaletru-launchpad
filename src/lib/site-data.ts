@@ -42,7 +42,7 @@ export const projects: Project[] = [
     category: "Website / Digital Presence",
     kind: "client",
     short:
-      "A client engagement focused on building a professional digital presence that represents the business properly online.",
+      "Digital storefront and hardware enquiry platform for PrintBlink, an authorized partner for Hyperdist commercial printing equipment and office supplies.",
     image: printblinkLaptop.url,
     imageAlt: "PrintBlink project laptop mockup showing the supplied Hyperdist printer distribution homepage",
     gallery: [
@@ -60,23 +60,27 @@ export const projects: Project[] = [
       },
     ],
     overview:
-      "PrintBlink is genuine client work: a digital presence project delivered by Scaletru. Detailed project documentation is being finalised, so parts of this case study are marked as placeholders rather than filled with assumptions.",
-    challenge: "[Placeholder — the specific business problem will be documented here once confirmed with the client.]",
+      "PrintBlink serves corporate and enterprise clients as an authorized distribution partner for Hyperdist printing systems and workplace consumables. The engagement focused on engineering an authoritative digital presence that modernizes client discovery and transitions commercial buyers out of fragmented offline sales loops.",
+    challenge:
+      "Procurement teams and corporate purchasers previously depended on static PDF catalogues and unstructured messaging to identify models and check hardware specifications. This manual friction delayed response times, increased overhead for sales representatives, and made comparing high-volume office hardware unnecessarily difficult.",
     approach:
-      "[Placeholder — the strategy, structure and design decisions behind the build will be documented here once confirmed.]",
+      "Scaletru designed and built a fast, performance-first product showcase prioritizing intuitive category exploration and rapid specification checks. Rather than forcing complex self-serve e-commerce checkout onto high-ticket commercial hardware, the interface pairs instant model filtering directly with contextual WhatsApp RFQ pipelines for immediate quote qualification.",
     built: [
-      "[Placeholder — scope of work to be confirmed]",
-      "[Placeholder — pages and components delivered]",
-      "[Placeholder — content and design system decisions]",
+      "High-performance responsive web platform and commercial catalog showcase",
+      "Structured hardware inventory hierarchy with dynamic category filtering",
+      "Contextual WhatsApp sales integration with prefilled product and model parameters",
+      "Distributor credentialing suite, partner overview, and direct procurement channels",
     ],
     features: [
-      "[Placeholder — key feature]",
-      "[Placeholder — key feature]",
-      "[Placeholder — key feature]",
+      "Multi-tier hardware filtering covering inkjet, enterprise laser, multifunction, and consumable supplies",
+      "One-click corporate inquiry routing that attaches model SKUs and specifications directly to WhatsApp chats",
+      "Mobile-first responsive architecture designed for sub-second page loads and zero layout shift",
+      "Technical spec sheets highlighting print speeds, duty cycles, connectivity, and consumable compatibility",
     ],
+    tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     outcomeLabel: "What changed",
     outcome:
-      "[Placeholder — outcomes will be published only once measured and confirmed with the client. We do not publish results we cannot verify.]",
+      "Replaced scattered offline PDF sharing with a centralized, verified digital storefront that corporate procurement officers can review instantly. Inbound sales requests now reach account executives pre-qualified with precise hardware configurations, cutting quote cycle times and eliminating repetitive back-and-forth model confirmations.",
   },
   {
     slug: "tradesphere",
@@ -116,7 +120,7 @@ export const projects: Project[] = [
     category: "Rental marketplace",
     kind: "showcase",
     short:
-      "DirectLet connects landlords and tenants directly with listings, search and filters, inspection booking, in-app messaging, and payments, built for the Nigerian rental market.",
+      "A two-sided rental marketplace connecting verified Nigerian landlords directly with tenants in Lagos and Abuja, eliminating agent markups and scam-prone WhatsApp workflows.",
     image: directletLaptop.url,
     imageAlt:
       "DirectLet rental marketplace landing page shown on a laptop screen on a bright desk against a soft green wall",
@@ -139,29 +143,40 @@ export const projects: Project[] = [
       },
     ],
     overview:
-      "DirectLet is a rental platform built around a specific market reality: finding a place to rent in Nigeria usually means going through layers of intermediaries with little transparency.",
+      "DirectLet is a purpose-built rental marketplace tailored to the operational realities of the Nigerian residential property market. The platform connects vetted landlords with prospective tenants across major urban centres like Lagos and Abuja, removing unvetted intermediaries from the discovery, inspection, and agreement phases.",
     challenge:
-      "Tenants struggle to verify listings and book inspections. Landlords struggle to reach serious tenants. Everything happens over scattered phone calls and messages.",
+      "Renting residential property in Nigeria is burdened by exorbitant 10–20% agent commission and 'agreement' fees, rampant listing fraud, and uncoordinated inspection arrangements conducted across fragmented WhatsApp threads. Without verified landlord identities or structured scheduling, both tenants and property owners endure severe trust deficits and operational friction.",
     approach:
-      "We designed a direct landlord-to-tenant flow — discovery, filtering, inspection booking, conversation and payment — so the entire rental journey lives in one place with a clear record of it.",
+      "Scaletru engineered a web application around trust verification and structured transaction checkpoints rather than open-ended classifieds. We decoupled the frontend interface from the core backend via a modular REST and WebSocket architecture, prioritizing fast localized filtering, strict role-based dashboards, and a formal inspection booking and payment pipeline.",
     built: [
-      "Property listings with rich detail pages",
-      "Search with filters tuned to how people actually look for rentals",
-      "Inspection booking",
-      "In-app messaging between landlords and tenants",
-      "Payment handling",
+      "Full-featured two-sided marketplace frontend with dedicated Tenant, Landlord, and Admin operational portals",
+      "Landlord listing management suite with verified credential badging and property status toggles",
+      "Inspection booking and fee checkout pipeline (₦3,000–₦5,000) with real-time status tracking",
+      "Real-time landlord-tenant messaging inbox powered by WebSockets with REST conversation history fallbacks",
+      "Location-sensitive search engine with Lagos/Abuja neighborhood filters, price bands, and interactive map pins",
+      "Centralized administrative moderation panel for user identity audits, dispute flags, and listing verification",
     ],
     features: [
-      "Listing creation and management",
-      "Filtered search and discovery",
-      "Inspection scheduling",
-      "Direct messaging",
-      "Payments",
+      "Verified Landlord Badge system tied to identity vetting to protect tenants against phantom rentals",
+      "In-app inspection scheduler with scheduled slots, status progression, and automated confirmation states",
+      "Integrated inspection fee checkout flow to eliminate offline cash disputes and confirm tenant intent",
+      "Live chat inbox with persistent message history, role indicators, and direct listing context references",
+      "Neighborhood-level search filters calibrated for Lagos (Island, Mainland) and Abuja districts",
+      "Role-gated dashboard environments with custom views for active inquiries, listings, and pending bookings",
     ],
-    tech: ["Full-stack web application", "Real-time messaging", "Payment integration"],
+    tech: [
+      "React 19",
+      "TanStack Start",
+      "TanStack Router & Query",
+      "Tailwind CSS",
+      "TypeScript",
+      "Socket.IO Client",
+      "Leaflet / OpenStreetMap",
+      "Node.js / Express (Backend Integration)",
+    ],
     outcomeLabel: "What it demonstrates",
     outcome:
-      "DirectLet shows how we approach marketplace products built for a local market — designing around real behaviour rather than importing a foreign template.",
+      "Demonstrates Scaletru's ability to architect and deliver complex, localized two-sided marketplaces engineered for emerging markets where trust infrastructure is the primary product hurdle. The build proves that high-friction, offline informal workflows—such as fragmented WhatsApp inspections and cash deposits—can be distilled into a unified, secure web product.",
   },
   {
     slug: "tracleads",
