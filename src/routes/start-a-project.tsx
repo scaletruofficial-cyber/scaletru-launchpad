@@ -1,3 +1,4 @@
+import { EmailContact } from "@/components/site/EmailContact";
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useState, type FormEvent } from "react";
@@ -189,8 +190,9 @@ function StartProjectPage() {
 
               {status === "error" ? (
                 <p role="alert" className="text-sm text-destructive">
-                  Something went wrong sending that. Please try again, or email
-                  scaletruofficial@gmail.com.
+                  Something went wrong sending that. Please try again, or email{" "}
+                  <EmailContact />
+
                 </p>
               ) : null}
 

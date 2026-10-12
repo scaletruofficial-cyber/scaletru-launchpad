@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ButtonLink } from "./Button";
+import { EmailContact } from "./EmailContact";
 
 const explore = [
   { to: "/work", label: "Work" },
@@ -12,7 +13,6 @@ const connect = [
   { href: "https://www.linkedin.com", label: "LinkedIn" },
   { href: "https://www.instagram.com", label: "Instagram" },
   { href: "https://x.com", label: "X" },
-  { href: "mailto:scaletruofficial@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
@@ -66,6 +66,9 @@ export function Footer() {
                 </a>
               </li>
             ))}
+            <li className="text-sm text-muted-foreground">
+              <EmailContact />
+            </li>
           </ul>
         </nav>
       </div>
