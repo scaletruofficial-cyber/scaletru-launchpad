@@ -136,7 +136,7 @@ export function FeaturedCaseCard({ project }: { project: Project }) {
           </Link>
         </div>
 
-        <div className="order-1 overflow-hidden border-b border-border lg:order-2 lg:border-b-0 lg:border-l">
+        <div className="order-1 flex items-center justify-center overflow-hidden border-b border-border lg:order-2 lg:border-b-0 lg:border-l">
           <img
             src={project.image}
             alt={project.imageAlt}
@@ -144,7 +144,12 @@ export function FeaturedCaseCard({ project }: { project: Project }) {
             height={1000}
             loading="lazy"
             decoding="async"
-            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+            className={cn(
+              "block w-full",
+              project.slug === "printblink"
+                ? "h-auto object-contain"
+                : "h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]",
+            )}
           />
         </div>
       </div>
