@@ -12,7 +12,7 @@ const connect = [
   { href: "https://www.linkedin.com", label: "LinkedIn" },
   { href: "https://www.instagram.com", label: "Instagram" },
   { href: "https://x.com", label: "X" },
-  { href: "mailto:hello@scaletru.com", label: "Email" },
+  { href: "mailto:scaletruofficial@gmail.com", label: "Email" },
 ];
 
 export function Footer() {
