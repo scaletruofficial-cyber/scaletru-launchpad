@@ -189,7 +189,8 @@ function StartProjectPage() {
 
               {status === "error" ? (
                 <p role="alert" className="text-sm text-destructive">
-                  Something went wrong sending that. Please try again, or email hello@scaletru.com.
+                  Something went wrong sending that. Please try again, or email
+                  scaletruofficial@gmail.com.
                 </p>
               ) : null}
 
