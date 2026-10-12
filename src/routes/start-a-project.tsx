@@ -1,3 +1,4 @@
+import { EmailContact } from "@/components/site/EmailContact";
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { useState, type FormEvent } from "react";
