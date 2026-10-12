@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "8fbf1025-529b-457f-8793-4c176a3e7821",
-  "project_id": "26c00c92-ff06-47de-8c4d-2eb4dd2a89fa",
-  "url": "/__l5e/assets-v1/8fbf1025-529b-457f-8793-4c176a3e7821/directlet-listings-shot.png",
-  "r2_key": "a/v1/26c00c92-ff06-47de-8c4d-2eb4dd2a89fa/8fbf1025-529b-457f-8793-4c176a3e7821/directlet-listings-shot.png",
-  "original_filename": "directlet-listings-shot.png",
-  "size": 992486,
   "content_type": "image/png",
-  "created_at": "2026-10-06T00:09:49Z"
+  "created_at": "2026-10-06T00:09:49Z",
+  "original_filename": "directlet-listings-shot.png",
+  "project_id": "90002f61-e8bf-4130-9824-57eedf67cbb9",
+  "r2_key": "a/v1/90002f61-e8bf-4130-9824-57eedf67cbb9/8fbf1025-529b-457f-8793-4c176a3e7821/directlet-listings-shot.png",
+  "size": 992486,
+  "url": "/__l5e/assets-v1/8fbf1025-529b-457f-8793-4c176a3e7821/directlet-listings-shot.png",
+  "version": 1
 }
