@@ -12,7 +12,7 @@ export const Route = createFileRoute("/work/")({
       {
         name: "description",
         content:
-          "Client work and product showcases from Scaletru: food ordering websites, marketplaces, rental platforms, CRM systems and mobile apps.",
+          "Client work and product showcases from Scaletru: fragrance commerce, food ordering websites, rental platforms, CRM systems and mobile apps.",
       },
       { property: "og:title", content: "Work — Scaletru Digital Product Studio" },
       {
@@ -70,7 +70,7 @@ function WorkPage() {
           </Reveal>
           <div className="mt-14 grid gap-5 md:grid-cols-2">
             {showcaseProjects.map((project, i) => (
-              <Reveal key={project.slug} delay={(i % 2) * 70}>
+              <Reveal key={project.slug} delay={(i % 2) * 70} className={i === 0 ? "md:col-span-2" : ""}>
                 <ProjectCard project={project} size={i === 0 ? "wide" : "default"} />
               </Reveal>
             ))}

@@ -5,5 +5,5 @@
 - [x] Verify icon delivery and updated project image rendering.
 - [x] Fill PrintBlink and DirectLet case studies with the supplied copy.
 - [x] Fill Emberly and Tracleads case studies with the supplied copy.
-- [ ] TradeSphere case study copy and product images — waiting on the user.
+- [x] Replace TradeSphere with Essence using the supplied case study and three images; verify portfolio ordering and links.
 - [x] Replace ArenaX with Butta Rush using the supplied case study and five images; verify portfolio links and layouts.

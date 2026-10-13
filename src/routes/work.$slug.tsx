@@ -10,6 +10,9 @@ export const Route = createFileRoute("/work/$slug")({
     if (params.slug === "arenax") {
       throw redirect({ to: "/work/$slug", params: { slug: "butta-rush" }, statusCode: 301 });
     }
+    if (params.slug === "tradesphere") {
+      throw redirect({ to: "/work/$slug", params: { slug: "essence" }, statusCode: 301 });
+    }
     const project = getProject(params.slug);
     if (!project) throw notFound();
     return { project };
