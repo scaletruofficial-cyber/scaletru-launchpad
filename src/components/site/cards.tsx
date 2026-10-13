@@ -61,7 +61,9 @@ export function ProjectCard({
             loading="lazy"
             decoding="async"
             className={cn(
-              "w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]",
+              project.imageFit === "contain"
+                ? "w-full object-contain"
+                : "w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]",
               size === "wide" ? "aspect-[21/9]" : "aspect-[16/10]",
             )}
           />
@@ -146,7 +148,7 @@ export function FeaturedCaseCard({ project }: { project: Project }) {
             decoding="async"
             className={cn(
               "block w-full",
-              project.slug === "printblink"
+              project.slug === "printblink" || project.imageFit === "contain"
                 ? "h-auto object-contain"
                 : "h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]",
             )}
