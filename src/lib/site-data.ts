@@ -42,7 +42,9 @@ export type Project = {
   outcomeLabel: string;
 };
 
-export const projects: Project[] = [
+const portfolioOrder = ["printblink", "butta-rush", "directlet", "tracleads", "essence", "emberly"];
+
+export const projects: Project[] = ([
   {
     slug: "printblink",
     name: "PrintBlink",
@@ -325,7 +327,7 @@ export const projects: Project[] = [
     outcome:
       "Emberly proves that exceptional product judgment often lies in what gets excluded rather than added. The project demonstrates disciplined interface craftsmanship, low-latency client architecture, and the ability to turn a saturated consumer category into a refined, high-utility digital artifact.",
   },
-].sort((a, b) => portfolioOrder.indexOf(a.slug) - portfolioOrder.indexOf(b.slug));
+] satisfies Project[]).sort((a, b) => portfolioOrder.indexOf(a.slug) - portfolioOrder.indexOf(b.slug));
 
 export const clientProjects = projects.filter((p) => p.kind === "client");
 export const showcaseProjects = projects.filter((p) => p.kind === "showcase");
