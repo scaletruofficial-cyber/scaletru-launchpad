@@ -20,6 +20,7 @@ export const Route = createFileRoute("/process")({
       },
       { property: "og:url", content: "/process" },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/process" }],
   }),
