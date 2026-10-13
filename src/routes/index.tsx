@@ -219,7 +219,7 @@ function Home() {
             </Reveal>
             <div className="mt-14 grid gap-5 md:grid-cols-2">
               {showcaseProjects.map((project, i) => (
-                <Reveal key={project.slug} delay={(i % 2) * 70}>
+                <Reveal key={project.slug} delay={(i % 2) * 70} className={i === 0 ? "md:col-span-2" : undefined}>
                   <ProjectCard project={project} size={i === 0 ? "wide" : "default"} />
                 </Reveal>
               ))}
