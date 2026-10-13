@@ -1,4 +1,6 @@
-import tradesphereImg from "@/assets/tradesphere.jpg";
+import essenceLaptop from "@/assets/essence-homepage-laptop.jpg.asset.json";
+import essenceCatalog from "@/assets/essence-catalog-desktop-mobile.jpg.asset.json";
+import essenceProduct from "@/assets/essence-product-desktop-mobile.jpg.asset.json";
 import tracleadsSlide from "@/assets/tracleads-portfolio-mockup.png.asset.json";
 import buttaRushLaptop from "@/assets/butta-rush-home-laptop.png.asset.json";
 import buttaRushMenuDesktop from "@/assets/butta-rush-menu-desktop.png.asset.json";
@@ -88,36 +90,46 @@ export const projects: Project[] = [
       "Replaced scattered offline PDF sharing with a centralized, verified digital storefront that corporate procurement officers can review instantly. Inbound sales requests now reach account executives pre-qualified with precise hardware configurations, cutting quote cycle times and eliminating repetitive back-and-forth model confirmations.",
   },
   {
-    slug: "tradesphere",
-    name: "TradeSphere",
-    category: "Multi-vendor marketplace",
+    slug: "essence",
+    name: "Essence",
+    category: "Fragrance e-commerce concept",
     kind: "showcase",
     short:
-      "A full-stack marketplace built to support multiple vendors, product image management, and live payments — from vendor storefronts to a Nomba-powered checkout flow.",
-    image: tradesphereImg,
-    imageAlt: "TradeSphere marketplace interface showing vendor storefronts and checkout",
+      "A concept fragrance house with a 100-product catalog, guided scent discovery, a wishlist and a demo checkout journey, brought together in a considered editorial storefront.",
+    image: essenceLaptop.url,
+    imageAlt: "Essence fragrance storefront homepage shown on a laptop with the Velvet Rose perfume feature",
+    imageFit: "contain",
+    gallery: [
+      { src: essenceCatalog.url, alt: "Essence fragrance catalog on desktop and mobile with collection filters and perfume product cards" },
+      { src: essenceProduct.url, alt: "Essence Velvet Rose product page on desktop and mobile with bottle sizes, longevity, quantity and add-to-bag controls" },
+    ],
     overview:
-      "TradeSphere explores what it takes to run a marketplace where many independent vendors sell under one roof — storefronts, catalogue management, and a real payment flow rather than a mocked one.",
+      "Essence is a concept perfume brand designed and built as a working storefront demonstration. Rather than a generic product grid, the experience uses language, imagery and guided discovery to evoke a quiet Scandinavian fragrance house. A hundred-product catalog connects to rich product pages, a scent quiz, a wishlist and a cart and checkout journey.",
     challenge:
-      "Marketplaces are deceptively complex. Each vendor needs control over their own catalogue and storefront, while buyers need one coherent shopping and checkout experience across all of them.",
+      "The project began as a general home-goods store. The challenge was to transform it into a distinctive fragrance house while retaining its commerce foundation. Because customers cannot smell perfume through a screen, the interface needed to communicate scent through evocative copy, product photography and clear fragrance information.",
     approach:
-      "We modelled vendors, products and orders as separate concerns from the start, then designed the buyer experience so the multi-vendor structure stays invisible until it matters — at cart and checkout.",
+      "We paired an editorial identity with a structured shopping journey. Cormorant Garamond headings, Karla body text, warm neutrals and terracotta accents give Essence the feel of a fragrance journal. Collection filters, size-aware pricing and a five-question scent quiz turn browsing into considered discovery, while shared cart and wishlist state keep the experience consistent across pages.",
     built: [
-      "Vendor storefronts with independent product catalogues",
-      "Product management including image upload and handling",
-      "Buyer-side browsing, search and cart",
-      "A live checkout flow powered by Nomba",
+      "A 100-product fragrance catalog organized by collection, discovery sets and gift sets",
+      "Product pages with 5 ml, 10 ml and 50 ml sizes and size-aware pricing",
+      "A guided scent quiz ending in personalized fragrance recommendations",
+      "A wishlist with sorting, size-availability filters, removal undo and add-to-bag actions",
+      "An editorial homepage with rotating fragrance highlights",
+      "A demo cart and checkout journey with size-specific line items",
+      "An internal perfume directory for reviewing product imagery status",
     ],
     features: [
-      "Multi-vendor product management",
-      "Product image upload and media handling",
-      "Cart and order flow across vendors",
-      "Live payment integration",
+      "For Her, For Him and Unisex collections with discovery and gift sets",
+      "Top, heart and base notes, concentration, longevity and sillage information",
+      "Five quiz questions covering mood, season, notes, longevity and sillage",
+      "Consistent wishlist hearts and shared client-side shopping state",
+      "A bespoke scent-loader animation and carefully written empty states",
+      "Brand-consistent copy from the first homepage headline through demo checkout",
     ],
-    tech: ["Full-stack web application", "Nomba payments", "Cloud media storage"],
-    outcomeLabel: "What it demonstrates",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Shared client-side cart and wishlist store"],
+    outcomeLabel: "Demo-ready outcome",
     outcome:
-      "TradeSphere shows that Scaletru can build commerce infrastructure end to end — not a storefront template, but the vendor, catalogue and payment systems underneath it.",
+      "Essence presents a cohesive concept fragrance house with a hundred products, real brand names and imagery, guided scent discovery and a checkout path that carries the brand voice throughout. It is demo-ready, not a live trading store: accounts, persistent orders and real payments remain future Lovable Cloud connections, alongside publishing the concept for its next stage.",
   },
   {
     slug: "directlet",
@@ -127,6 +139,7 @@ export const projects: Project[] = [
     short:
       "A two-sided rental marketplace connecting verified Nigerian landlords directly with tenants in Lagos and Abuja, eliminating agent markups and scam-prone WhatsApp workflows.",
     image: directletLaptop.url,
+    imageFit: "contain",
     imageAlt:
       "DirectLet rental marketplace landing page shown on a laptop screen on a bright desk against a soft green wall",
     gallery: [
@@ -312,7 +325,7 @@ export const projects: Project[] = [
     outcome:
       "Emberly proves that exceptional product judgment often lies in what gets excluded rather than added. The project demonstrates disciplined interface craftsmanship, low-latency client architecture, and the ability to turn a saturated consumer category into a refined, high-utility digital artifact.",
   },
-];
+].sort((a, b) => portfolioOrder.indexOf(a.slug) - portfolioOrder.indexOf(b.slug));
 
 export const clientProjects = projects.filter((p) => p.kind === "client");
 export const showcaseProjects = projects.filter((p) => p.kind === "showcase");
@@ -356,7 +369,7 @@ export const services: Service[] = [
       "Responsive, fast and accessible build",
       "SEO foundations in place from day one",
     ],
-    examples: ["printblink", "tradesphere"],
+    examples: ["printblink", "essence"],
   },
   {
     number: "02",
@@ -378,7 +391,7 @@ export const services: Service[] = [
       "Accounts, permissions and payments where needed",
       "A codebase that can keep growing",
     ],
-    examples: ["tradesphere", "directlet", "emberly"],
+    examples: ["directlet", "essence", "emberly"],
   },
   {
     number: "03",
@@ -422,7 +435,7 @@ export const services: Service[] = [
       "A reusable, documented design system",
       "Design ready to be built",
     ],
-    examples: ["emberly", "directlet", "tracleads"],
+    examples: ["directlet", "tracleads", "emberly"],
   },
 ];
 

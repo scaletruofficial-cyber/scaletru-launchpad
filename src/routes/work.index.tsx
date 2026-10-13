@@ -12,7 +12,7 @@ export const Route = createFileRoute("/work/")({
       {
         name: "description",
         content:
-          "Client work and product showcases from Scaletru: food ordering websites, marketplaces, rental platforms, CRM systems and mobile apps.",
+          "Client work and product showcases from Scaletru: fragrance commerce, food ordering websites, rental platforms, CRM systems and mobile apps.",
       },
       { property: "og:title", content: "Work — Scaletru Digital Product Studio" },
       {

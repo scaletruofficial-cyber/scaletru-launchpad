@@ -63,10 +63,10 @@ const outcomes = [
 ];
 
 function Home() {
-  const tradesphere = getProject("tradesphere");
+  const essence = getProject("essence");
   const tracleads = getProject("tracleads");
   const emberly = getProject("emberly");
-  if (!tradesphere || !tracleads || !emberly) return null;
+  if (!essence || !tracleads || !emberly) return null;
 
   return (
     <>
@@ -113,10 +113,11 @@ function Home() {
               />
               <div className="mt-4 grid grid-cols-2 gap-4">
                 <BrowserFrame
-                  src={tradesphere.image}
-                  alt="TradeSphere marketplace interface built by Scaletru"
-                  label="tradesphere"
-                  imgClassName="aspect-[16/11]"
+                  src={essence.image}
+                  alt={essence.imageAlt}
+                  label="essence"
+                  imgClassName="aspect-[16/11] object-contain"
+                  chrome={false}
                 />
                 <BrowserFrame
                   src={emberly.image}
