@@ -1,4 +1,4 @@
-import { createFileRoute, notFound, Link } from "@tanstack/react-router";
+import { createFileRoute, notFound, redirect, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { Eyebrow, Tag } from "@/components/site/SectionHeading";
 import { CTASection } from "@/components/site/CTASection";
@@ -7,6 +7,9 @@ import { getProject, projects } from "@/lib/site-data";
 
 export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
+    if (params.slug === "arenax") {
+      throw redirect({ to: "/work/$slug", params: { slug: "butta-rush" }, statusCode: 301 });
+    }
     const project = getProject(params.slug);
     if (!project) throw notFound();
     return { project };
@@ -27,6 +30,7 @@ export const Route = createFileRoute("/work/$slug")({
         { property: "og:description", content: project.short },
         { property: "og:url", content: `/work/${params.slug}` },
         { property: "og:type", content: "article" },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       links: [{ rel: "canonical", href: `/work/${params.slug}` }],
     };
@@ -211,7 +215,9 @@ function ProjectDetail() {
                   width={1600}
                   height={1000}
                   loading="lazy"
-                  className="aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                  className={other.imageFit === "contain"
+                    ? "aspect-[16/10] w-full object-contain"
+                    : "aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"}
                 />
                 <div className="p-6">
                   <h3 className="text-lg font-bold">{other.name}</h3>

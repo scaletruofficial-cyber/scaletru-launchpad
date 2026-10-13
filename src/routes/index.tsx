@@ -38,6 +38,7 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:url", content: "/" },
       { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),
@@ -62,9 +63,10 @@ const outcomes = [
 ];
 
 function Home() {
-  const tradesphere = getProject("tradesphere")!;
-  const tracleads = getProject("tracleads")!;
-  const emberly = getProject("emberly")!;
+  const tradesphere = getProject("tradesphere");
+  const tracleads = getProject("tracleads");
+  const emberly = getProject("emberly");
+  if (!tradesphere || !tracleads || !emberly) return null;
 
   return (
     <>

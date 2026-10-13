@@ -1,6 +1,10 @@
 import tradesphereImg from "@/assets/tradesphere.jpg";
 import tracleadsSlide from "@/assets/tracleads-portfolio-mockup.png.asset.json";
-import arenaxImg from "@/assets/arenax.jpg";
+import buttaRushLaptop from "@/assets/butta-rush-home-laptop.png.asset.json";
+import buttaRushMenuDesktop from "@/assets/butta-rush-menu-desktop.png.asset.json";
+import buttaRushPickupDesktop from "@/assets/butta-rush-pickup-desktop.png.asset.json";
+import buttaRushMenuMobile from "@/assets/butta-rush-menu-mobile.png.asset.json";
+import buttaRushPickupMobile from "@/assets/butta-rush-pickup-mobile.png.asset.json";
 import printblinkLaptop from "@/assets/printblink-laptop-home.png.asset.json";
 import printblinkProducts from "@/assets/printblink-products.png.asset.json";
 import printblinkAbout from "@/assets/printblink-mobile-about.png.asset.json";
@@ -24,6 +28,7 @@ export type Project = {
   short: string;
   image: string;
   imageAlt: string;
+  imageFit?: "contain";
   gallery?: { src: string; alt: string }[];
   overview: string;
   challenge: string;
@@ -216,38 +221,45 @@ export const projects: Project[] = [
       "Tracleads demonstrates Scaletru's ability to take a commercial SaaS product from system design through secure onboarding and operational workflows. It proves that the studio can deliver scalable, multi-tenant software built for repeated daily use rather than a static product demonstration.",
   },
   {
-    slug: "arenax",
-    name: "ArenaX",
-    category: "Tournament management platform",
-    kind: "showcase",
+    slug: "butta-rush",
+    name: "Butta Rush",
+    category: "Food & catering website",
+    kind: "client",
     short:
-      "Built to run competitive tournaments end to end — brackets, scheduling, and admin score confirmation. Shared directly with the University of Port Harcourt's Director of Sports, whose hands-on feedback shaped features including group-stage standings and team management.",
-    image: arenaxImg,
-    imageAlt: "ArenaX tournament platform interface showing brackets and group standings",
+      "A WhatsApp-first website for a bakery and catering business, bringing menu discovery, order building and pickup scheduling into one clear customer journey.",
+    image: buttaRushLaptop.url,
+    imageAlt: "Butta Rush homepage shown on a laptop, featuring Nigerian meals, cakes and catering",
+    imageFit: "contain",
+    gallery: [
+      { src: buttaRushMenuDesktop.url, alt: "Butta Rush desktop menu with category filters, Nigerian meals and naira prices" },
+      { src: buttaRushPickupDesktop.url, alt: "Butta Rush desktop pickup booking with date, hourly time slots, address and WhatsApp order summary" },
+      { src: buttaRushMenuMobile.url, alt: "Butta Rush mobile menu showing Jollof Rice and the order basket with a naira total" },
+      { src: buttaRushPickupMobile.url, alt: "Butta Rush mobile pickup form and order summary ready to send on WhatsApp" },
+    ],
     overview:
-      "ArenaX manages competitive tournaments from registration through to a confirmed final result — brackets, fixtures, scores and the admin layer that keeps results trustworthy.",
+      "Butta Rush is a bakery and catering business offering cakes, pastries, Nigerian meals and party trays. Scaletru designed and developed a website that connects browsing with ordering: customers explore the menu, build a basket, choose pickup details and send the complete request to the business on WhatsApp.",
     challenge:
-      "Tournaments are usually run on paper, group chats and spreadsheets. Fixtures drift, scores get disputed, and standings are hard to keep accurate in real time.",
+      "Food orders handled through scattered messages can leave important details incomplete. Butta Rush needed a clear way for customers to discover the menu and share their items, quantities and pickup preferences without adding an account or online checkout.",
     approach:
-      "We built the bracket and scheduling engine first, then added an admin confirmation step so no score enters the standings without being verified.",
+      "We kept WhatsApp as the final handoff and structured everything before it. A filterable menu and order basket lead into pickup scheduling, then a prepared message brings the full request together for availability confirmation. The design pairs a warm, dark visual identity with higher-contrast text and generous tap targets.",
     built: [
-      "Tournament brackets",
-      "Match scheduling",
-      "Admin score confirmation",
-      "Group-stage standings",
-      "Team management",
+      "A responsive bakery and catering website with menu discovery",
+      "Category filtering, product details and an order basket",
+      "Pickup booking with a date, time and address",
+      "A prepared WhatsApp message containing the full order and pickup details",
+      "Static hosting and accessibility refinements without a database or account flow",
     ],
     features: [
-      "Bracket generation and progression",
-      "Fixture scheduling",
-      "Admin-verified score entry",
-      "Group-stage standings tables",
-      "Team and roster management",
+      "Menu categories covering cakes, pastries, meals and trays",
+      "Item quantities and order totals displayed in naira",
+      "Price on request for items without a confirmed price",
+      "15 hourly pickup choices from 7 AM to 9 PM",
+      "Order and pickup summary sent directly to WhatsApp",
+      "Mobile-friendly ordering with large tap targets and readable text",
     ],
-    tech: ["Full-stack web application", "Role-based admin controls"],
-    outcomeLabel: "Validation",
+    outcomeLabel: "What we delivered",
     outcome:
-      "ArenaX was shared directly with the University of Port Harcourt's Director of Sports, whose hands-on feedback shaped features including group-stage standings and team management. It has not been officially adopted or deployed for a university tournament — the value here is direct stakeholder feedback and feature validation from someone who runs real competitions.",
+      "Butta Rush now has a connected path from menu discovery to a complete WhatsApp order request, with items and pickup preferences gathered before the conversation begins. The delivered scope covers discovery, ordering, scheduling, WhatsApp handoff, hosting and accessibility. Future refinements identified in the case study include real food photography, remaining price confirmations and an optional brand refresh.",
   },
   {
     slug: "emberly",
@@ -388,7 +400,7 @@ export const services: Service[] = [
       "Visibility into what is happening day to day",
       "Team training and handover",
     ],
-    examples: ["tracleads", "arenax"],
+    examples: ["tracleads", "butta-rush"],
   },
   {
     number: "04",
