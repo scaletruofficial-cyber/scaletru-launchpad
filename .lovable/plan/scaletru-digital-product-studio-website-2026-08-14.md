@@ -15,7 +15,7 @@ A complete, custom-built multi-page site: dark, premium, typographically led, wi
 2. **Work** — full portfolio index: PrintBlink as featured client work, then the five showcase products.
 3. **Services** — hero plus the four expanded categories (what it is, what we build, who it's for, what you get, related projects, CTA). Pricing shown as "Projects are scoped around your needs."
 4. **Process** — the six stages expanded, ending with "Need help figuring out what you need?"
-5. **About** — story, mission, founders (Chiagozie, Marvellous), how we work, AI as leverage, small-team advantage.
+5. **About** — story, mission, founders (Stephen, Marvellous), how we work, AI as leverage, small-team advantage.
 6. **Start a Project** — the conversion page and form.
 7. **Project detail pages** — one reusable template driving six pages: PrintBlink (case-study framing, placeholder copy where details aren't confirmed), TradeSphere, DirectLet, CRM System, ArenaX, Emberly (project framing: overview, challenge, approach, what we built, key features, gallery, validation, CTA).
 

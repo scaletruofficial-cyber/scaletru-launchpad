@@ -501,7 +501,7 @@ export const pillars = [
 
 export const founders = [
   {
-    name: "Chiagozie",
+    name: "Stephen",
     role: "UI/UX Designer",
     focus: "Product design, user experience, visual direction and product thinking.",
     initials: "C",

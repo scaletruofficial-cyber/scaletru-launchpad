@@ -262,7 +262,7 @@ Headline: "Small team. Serious builds."
 
 Introduce the founders:
 
-Chiagozie — UI/UX Designer. Focus: product design, user experience, visual direction and product thinking.
+Stephen — UI/UX Designer. Focus: product design, user experience, visual direction and product thinking.
 
 Marvellous — Full-Stack Developer. Focus: development, architecture, integrations and technical implementation.
 
