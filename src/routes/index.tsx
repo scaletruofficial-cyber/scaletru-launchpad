@@ -105,22 +105,22 @@ function Home() {
 
           <Reveal delay={200} className="relative">
             <div className="relative">
-              <BrowserFrame
-                src={tracleads.image}
+            <BrowserFrame
+                src="https://res.cloudinary.com/kr2f8mqh/image/upload/v1791896175/tracleads-portfolio-mockup.png"
                 alt="Tracleads landing page on a laptop with dashboard, sign-in and leads windows, built by Scaletru"
                 label="scaletru — tracleads"
                 priority
               />
               <div className="mt-4 grid grid-cols-2 gap-4">
                 <BrowserFrame
-                  src={essence.image}
+                  src="https://res.cloudinary.com/kr2f8mqh/image/upload/v1791895852/essence-homepage-laptop.jpg"
                   alt={essence.imageAlt}
                   label="essence"
-                  imgClassName="aspect-[16/11] object-contain"
+                  // imgClassName="aspect-[16/11] object-contain"
                   chrome={false}
                 />
                 <BrowserFrame
-                  src={emberly.image}
+                  src="https://res.cloudinary.com/kr2f8mqh/image/upload/v1791896808/emberly-laptop-mockup.png"
                   alt="Emberly habit tracking app landing page on a laptop, built by Scaletru"
                   label="emberly"
                   imgClassName="aspect-[16/11]"

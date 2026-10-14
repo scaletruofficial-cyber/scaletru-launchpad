@@ -2,6 +2,10 @@ import essenceLaptop from "@/assets/essence-homepage-laptop.jpg.asset.json";
 import essenceCatalog from "@/assets/essence-catalog-desktop-mobile.jpg.asset.json";
 import essenceProduct from "@/assets/essence-product-desktop-mobile.jpg.asset.json";
 import tracleadsSlide from "@/assets/tracleads-portfolio-mockup.png.asset.json";
+import tracleadsdashboard from "@/assets/tracleads-dashoard-mockup.png.asset.json";
+import tracleadsworksetup from "@/assets/tracleads-workspace-setup-mockup.png.asset.json";
+import tracleadslead  from "@/assets/tracleads-lead-mockup.png.asset.json";
+import tracleadslogin  from "@/assets/tracleads-login-mockup.png.asset.json";
 import buttaRushLaptop from "@/assets/butta-rush-home-laptop.png.asset.json";
 import buttaRushMenuDesktop from "@/assets/butta-rush-menu-desktop.png.asset.json";
 import buttaRushPickupDesktop from "@/assets/butta-rush-pickup-desktop.png.asset.json";
@@ -208,7 +212,13 @@ export const projects: Project[] = ([
     image: tracleadsSlide.url,
     imageAlt:
       "Tracleads portfolio slide showing its landing page on a laptop screen, with dashboard, sign-in, workspace setup and leads windows arranged around it",
-    overview:
+      gallery: [
+        { src: tracleadslogin.url, alt: "Butta Rush desktop menu with category filters, Nigerian meals and naira prices" },
+        { src: tracleadsworksetup.url, alt: "Butta Rush desktop pickup booking with date, hourly time slots, address and WhatsApp order summary" },
+        { src: tracleadsdashboard.url, alt: "Butta Rush mobile menu showing Jollof Rice and the order basket with a naira total" },
+        { src: tracleadslead.url, alt: "Butta Rush mobile pickup form and order summary ready to send on WhatsApp" },
+      ],
+      overview:
       "Tracleads is Scaletru's internal CRM and sales operations workspace, designed to manage client deals from first enquiry through to close. The product serves as both an operational system for the team and a showcase of full commercial SaaS execution.",
     challenge:
       "Growing businesses often manage sales across disconnected spreadsheets, fragmented chat histories and manual reminders. That creates weak ownership, incomplete customer context and follow-ups that are easy to miss as deal volume grows.",
